@@ -12,9 +12,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'phanviet/vim-monokai-pro'
 Plugin 'rhysd/vim-clang-format'
-Plugin 'rust-lang/rust.vim'
 Plugin  'neoclide/coc.nvim', {'branch': 'release'}
-Plugin 'sdiehl/vim-ormolu'
 
 
 let NERDTreeWinPos='left'
@@ -28,12 +26,6 @@ let g:airline#extensions#tabline#enabled=1
 let g:airline_theme='luna'
 
 let g:clang_format#auto_format_on_insert_leave=1
-let g:rustfmt_autosave=1
-
-let g:ormolu_command="ormolu"
-"let g:ormolu_supress_stderr=1
-let g:ormolu_options=["--unsafe -o -XTypeApplications"]
-autocmd BufWritePre *.hs :call RunOrmolu()
 
 syntax on
 filetype on
